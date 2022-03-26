@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css?family=Open Sans');
+
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFEEE;
+}
+
+.hide {
+  display: none;
+}
+
+.fadeIn {
+  animation: fade 0.5s ease-in-out;
+}
+
+/* To allow components to be placed side by side */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container {
+  height: auto;
+  width: 1024px;
+}
+
+.row1 {
+  background-color: #FFFEEE;
+}
+
+.row2 {
+  background-color: #FFF3D6;
+  padding-top: 25px;
+}
+
+.row3
+{
+  background-color: #FFFEEE;
+  padding-top: 25px;
+}
+
+.logo {
+  display: block;
+  height: auto;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.margin-middle {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.date {
+  padding: 0px 20px;
+}
+
+/* COVID19 Stats & Chart */
+main {
+  max-width: 1200px;
+  margin:0 auto;
+  
+}
+
+/* background image */
+.stats {
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url('http://localhost/TWT%20Individual%20assignment/Images/bg.jpg');
+  background-size: cover;
+  border-radius: 8px;
+}
+
+/* latest report */
+.latest-report {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+
+  color: #FFF;
+}
+
+.country,
+.total-cases,
+.recovered,
+.deaths {
+  height: 100px;
+}
+
+.country-name {
+  font-size: 2.2em;
+  color: #be64f1;
+  font-weight: bold;
+}
+
+.stats-title {
+  font-size: 1.3em;
+}
+
+.total-cases .value {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.recovered .value {
+  font-size: 2em;
+  font-weight: bold;
+  color: #009688;
+}
+
+.deaths .value {
+  font-size: 2em;
+  font-weight: bold;
+  color: #f44336;
+}
+
+.new-value {
+  font-size: 1.3em;
+}
+
+/* chart */
+.chart {
+  width: 80%;
+  height: 70vh;
+  min-height: 500px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+/* SLIDESHOW */
+.slideshow-container, 
+.mySlides,
+.prev, .next,
+.text,
+.numbertext,
+.dot
+{
+  box-sizing: border-box; 
+}
+
+.slide-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 10px 0 0 0;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/10 etc) */
+.numbertext {
+  color: black;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Caption text */
+.slide-title {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* BUTTONS */
+.btn {
+  border: none;
+  background-color: #FFE486;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: bolder;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #FFE486;
+  width: 200px;
+  height: 60px;
+  
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.btn2 {
+  border: none;
+  background-color: #FFFA86;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: bolder;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 8px;
+  
+  border-style: solid;
+  border-width: 5px;
+  border-color: #FFFA86;
+  width: 200px;
+  height: 60px;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.btn3 {
+  border: none;
+  background-color: #FFE486;
+  font-weight: bolder;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 8px;
+  
+  border-style: solid;
+  border-width: 5px;
+  border-color: #FFE486;
+  width: 80px;
+  height: 42px;
+}
+
+.button-middle {
+  width: 200px;
+  height: auto;
+}
+
+/* On mouse-over */
+.btn:hover {
+  border-color: #ffa600;
+}
+
+.btn2:hover {
+  border-color: #FFE486;
+}
+
+.btn3:hover {
+  border-color: #ffa600;
+}
+
+.mainBtn_Report {
+  float: left;
+  margin-left: 100px;
+  font-size: smaller;
+}
+
+.mainBtn_Hotlines {
+  float: right;
+  margin-right: 100px;
+}
+
+.mainBtn_Download {
+  font-size: smaller;
+}
+
+.btn_Submit {
+  margin: 10px 0px 5px 0px;
+}
+
+.btn_Return {
+  float: right;
+  margin: 0 0 30px 0;
+}
+
+.btn_Go {
+  float: left;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+/* TITLE FORMAT */
+.title
+{
+  font-style: bold;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 87px;
+  margin: 0px 0px 0px 0px;
+  text-align: center;
+}
+
+.box-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.myBox {
+  background-color: #ffffff;
+}
+
+.profilePic {
+  height: 300px;
+  width: 300px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 50px;
+  /* border: solid 1px; */
+  border-color: black;
+  box-shadow: 0px 0px 1px 2px black;
+  object-fit: contain;
+
+}
+
+.profile-pic-container {
+  padding-top: 50px;
+}
+
+.author-profile {
+  float: left;
+}
+
+.author-container
+{
+  width: 400px;
+  height: 70px;
+  overflow: hidden;
+}
+
+.authorFont
+{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  margin: 0px 0px 0px 0px;
+  text-align: center;  
+}
+
+.quote-container {
+  height: 270px;
+  width: 600px;
+  max-height: 270px;
+  max-width: 600px;
+  position: relative;
+  margin: 65px 0px 0px 0px;
+  float: left;
+  overflow: hidden;
+}
+
+.quoteFont {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  text-align: justify; 
+  text-justify: inter-word;
+}
+
+.form-instruction {
+  font-size: 24px; 
+  margin: 10px 0px 0px 0px;
+}
+
+.form-container {
+  position: relative;
+  margin: 10px 0px 0px 0px;
+}
+
+.myForm {
+  height: 500px; 
+  background-color: #ffffff;
+  border: solid;
+  border-color: black;
+  border-radius: 5px;
+  padding: 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+input[type=text], input[type=number], input[type=tel], input[type=date], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.font-center {
+  text-align: center;
+}
+
+.process-data h2, .process-data p{
+  text-align: center;
+}
+
+.hotlines-form-container {
+  height: 60px;
+  position: relative;
+  margin-left: 220px;
+}
+
+.hotlines-instruction {
+  height: 60px;
+  max-width: 300px;
+  padding-top: 12px;
+  float: left;
+}
+.hotlines-instruction h2 {
+  display: table-cell; 
+  vertical-align: middle;
+}
+
+.state-myForm {
+  float: left;
+  height: 60px;
+}
+
+#state-hotlines {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-left: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* hotlines output */
+.hotlines-output-container {
+  position: relative;  
+  margin-bottom: 10px;
+  background-color: #ffffff;
+}
+
+.myOutput {
+  width: 1024px;
+  height: 400px;
+  display: none;
+}
+
+.myOutput.inactive {
+  display: block;
+  background-image: url(images/hotline.png); 
+  background-repeat: no-repeat;       
+  background-position: center;
+  filter: opacity(15%) grayscale(100%);
+  background-size: cover;
+  background-size: auto auto;
+}
+
+.table-hotlines {
+  width: 1024px;
+  height: 400px;
+  border: 1px solid;
+  table-layout: fixed;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.table-hotlines th {
+  border: 1px solid;
+  text-align: left;
+  padding-left: 25px;
+}
+
+.table-hotlines tr {
+  border: 1px solid;
+}
+
+.table-hotlines td {
+  border: 1px solid;
+  padding-left: 25px; 
+}
+
+.table-hotlines td h2 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.table-hotlines.active {
+  display: table;
+}
+
+.state-output {
+  float: left;
+}
+
+#state-output {
+  float: left;
+}
+
+#time1-start, #time1-end, #time2-start, #time2-end {
+  float: left;
+}
+
+.time-output {
+  float: left;
+}
+
+.form-error {
+  color: red;
+}
+
+.input-error {
+  box-shadow: 0 0 5px red;
+}
+

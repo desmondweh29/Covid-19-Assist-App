@@ -73,7 +73,7 @@ main {
 /* background image */
 .stats {
   width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url('http://localhost/TWT%20Individual%20assignment/Images/bg.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url('images/bg.jpg');
   background-size: cover;
   border-radius: 8px;
 }
@@ -362,6 +362,7 @@ main {
   line-height: 87px;
   margin: 0px 0px 0px 0px;
   text-align: center;
+  color: #00249c;
 }
 
 .box-container {
@@ -401,35 +402,45 @@ main {
 {
   width: 400px;
   height: 70px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
-.authorFont
+.author-container .authorFont
 {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 800;
+  width: 400px;
+  height: 70px;
   margin: 0px 0px 0px 0px;
   text-align: center;  
+  color:black;
+}
+
+.author-container .authorFont span{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
 }
 
 .quote-container {
+  position: relative;
+  float: left;
   height: 270px;
   width: 600px;
-  max-height: 270px;
-  max-width: 600px;
-  position: relative;
-  margin: 65px 0px 0px 0px;
-  float: left;
-  overflow: hidden;
+  margin: 50px 0px 0px 0px;
+  /* overflow: hidden; */
 }
 
-.quoteFont {
+.quote-container .quoteFont {
+  position: absolute;
+  height: 270px;
+  width: 600px;
+  text-align: center; 
+  /* text-justify: inter-word; */
+  color:#474994;
+}
+
+.quote-container .quoteFont span {
   font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 800;
-  text-align: justify; 
-  text-justify: inter-word;
+  font-style: italic;
 }
 
 .form-instruction {

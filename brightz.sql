@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 22, 2022 at 06:06 PM
+-- Generation Time: Mar 27, 2022 at 12:07 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.1
 
@@ -99,7 +99,7 @@ INSERT INTO `supportmessage` (`Day`, `AuthorName`, `AuthorQuote`, `AuthorPic`) V
 (19, 'Lisa Olivera', 'Just because no one else can heal or do your inner work for you, doesn’t mean you can, should, or need to do it alone.', 'Lisa Olivera.jpg'),
 (20, 'Marie Curie', 'Nothing in life is to be feared. It is only to be understood. Now is the time to understand more, so that we may fear less.', 'Marie Curie.jpg'),
 (21, 'Martin Luther King Jr.', 'Out of the mountain of despair, a stone of hope.', 'Martin Luther King Jr..jpg'),
-(22, 'Michelle Obama', 'You may not always have a comfortable life. And you will not always be able to solve all the word’s problems all at once. But don’t’ ever underestimate the impact you can have, because history has shown us that courage can be contagious, and hope can take on a life of its own.', 'Michelle Obama.png'),
+(22, 'Mahatma Gandhi', 'The future depends on what you do today.', 'Mahatma Gandhi.png'),
 (23, 'Oscar Wilde', 'What seems to us as bitter trials are often blessings in disguise.', 'Oscar Wilde.jpg'),
 (24, 'Rabindranath Tagore', 'Clouds come floating into my life, no longer to carry rain or usher storm, but to add color to my sunset sky.', 'Rabindranath Tagore.jpg'),
 (25, 'Rebecca Wells', 'Life is short, but it is wide. This too shall pass.', 'Rebecca Wells.jpg'),
@@ -133,6 +133,14 @@ CREATE TABLE `symptomsreport` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- Dumping data for table `symptomsreport`
+--
+
+INSERT INTO `symptomsreport` (`ReportID`, `Name`, `Age`, `Gender`, `Ic`, `Address`, `State`, `Postcode`, `Telno`, `Loc_test`, `Date_test`, `Outcome_test`, `Datetime_report`) VALUES
+(197, 'Teh Zi Yuan', 20, 'female', '020209-06-0129', 'Taman Tas', 'Pahang', '25250', '012-3456789', 'Private Hospital/Clinic', '2020-02-25', 'Negative', '2022-03-26 10:20:00'),
+(198, 'Wong En Hong', 150, 'male', '010604-06-0119', 'No29, Lorong Bukit Setongkol 103', 'Pahang', '25200', '010-8232318', 'Government Hospital/Clinic', '2020-01-25', 'Positive', '2022-03-26 10:46:27');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -162,7 +170,7 @@ ALTER TABLE `supportmessage`
 -- AUTO_INCREMENT for table `symptomsreport`
 --
 ALTER TABLE `symptomsreport`
-  MODIFY `ReportID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=197;
+  MODIFY `ReportID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=199;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

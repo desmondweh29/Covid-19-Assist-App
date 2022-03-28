@@ -216,14 +216,19 @@
               <div class="profile-pic-container">
                 <img id="authorPic" class="profilePic" src="images/ProfilePic/<?php echo $row["AuthorPic"];?>">
               </div>
-              <div id="authorFitText" class="authorFont author-container">
-                <span id="authorName"><?php echo $row["AuthorName"];?></span>
+              <div class="author-container">
+                <div class="authorFont">
+                  <span id="authorName"><?php echo $row["AuthorName"];?></span>
+                </div>
               </div>
             </div>
 
-            <div id="quoteFitText" class="quoteFont quote-container">
-              <span id="authorQuote">“<?php echo $row["AuthorQuote"];?>”</span> 
+            <div class="quote-container">
+              <div class="quoteFont">
+                <span>“<?php echo $row["AuthorQuote"];?>”</span> 
+              </div>
             </div>
+            
         </div>
 
         <div class="margin-middle button-middle">

@@ -214,14 +214,18 @@ for (i = 0; i < slideTitle.length; i++) {
 }
 
 // FIT TEXT INTO CONTAINER
-$('#authorFitText').textfill({
-  maxFontPixels: 50,
-  minFontPixels: 25
-});
-
-$('#quoteFitText').textfill({
+$('.authorFont').textfill({
   maxFontPixels: 50,
   minFontPixels: 25,
+  changeLineHeight: true,
+  debug: true
+});
+
+$('.quoteFont').textfill({
+  maxFontPixels: 50,
+  minFontPixels: 25,
+  changeLineHeight: true,
+  debug: true
 });
 
 // RETURN TO TOP 

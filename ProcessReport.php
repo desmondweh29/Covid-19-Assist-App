@@ -3,8 +3,6 @@
   <head>
     <meta charset = "utf-8">
     <link rel="stylesheet" href="Style.css">
-    <script type="text/javascript" src="scripts/jquery-3.6.0.js" defer></script>
-    <script type="text/javascript" src="scripts/jquery.textfill.js" defer></script>   
     <title>Brightz - Report Symptoms</title>
   </head>
 

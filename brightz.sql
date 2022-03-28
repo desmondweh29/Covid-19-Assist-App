@@ -105,7 +105,7 @@ INSERT INTO `supportmessage` (`Day`, `AuthorName`, `AuthorQuote`, `AuthorPic`) V
 (25, 'Rebecca Wells', 'Life is short, but it is wide. This too shall pass.', 'Rebecca Wells.jpg'),
 (26, 'Robert Frost', 'In three words I can sum up everything I’ve learned about life. It goes on.', 'Robert Frost.jpg'),
 (27, 'Robert Schuller', 'Tough times never last, but tough people do.', 'Robert Schuller.jpg'),
-(28, ' Roy T. Bennett', 'Challenge and adversity are meant to help you know who you are. Storms hit your weakness, but unlock your true strength.', ' Roy T. Bennett.jpg'),
+(28, ' Roy T. Bennett', 'Challenge and adversity are meant to help you know who you are. Storms hit your weakness, but unlock your true strength.', 'Roy T. Bennett.jpg'),
 (29, 'Thomas Edison', 'When you have exhausted all possibilities, remember this: you haven’t.', 'Thomas Edison.jpg'),
 (30, 'Victor Hugo', 'Even the darkest nights will end and the sun will rise.', 'Victor Hugo.jpg'),
 (31, 'Willie Nelson', 'Once you replace negative thoughts with positive ones, you’ll start having positive results.', 'Willie Nelson.jpg');

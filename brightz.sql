@@ -137,8 +137,8 @@ CREATE TABLE `symptomsreport` (
 --
 
 INSERT INTO `symptomsreport` (`ReportID`, `Name`, `Age`, `Gender`, `Ic`, `Address`, `State`, `Postcode`, `Telno`, `Loc_test`, `Date_test`, `Outcome_test`, `Datetime_report`) VALUES
-(197, 'Teh Zi Yuan', 20, 'female', '020209-06-0129', 'Taman Tas', 'Pahang', '25250', '012-3456789', 'Private Hospital/Clinic', '2020-02-25', 'Negative', '2022-03-26 10:20:00'),
-(198, 'Wong En Hong', 150, 'male', '010604-06-0119', 'No29, Lorong Bukit Setongkol 103', 'Pahang', '25200', '010-8232318', 'Government Hospital/Clinic', '2020-01-25', 'Positive', '2022-03-26 10:46:27');
+(1, 'Teh Zi Yuan', 20, 'female', '020209-06-0129', 'Taman Tas', 'Pahang', '25250', '012-3456789', 'Private Hospital/Clinic', '2020-02-25', 'Negative', '2022-03-26 10:20:00'),
+(2, 'Wong En Hong', 150, 'male', '010604-06-0119', 'No29, Lorong Bukit Setongkol 103', 'Pahang', '25200', '010-8232318', 'Government Hospital/Clinic', '2020-01-25', 'Positive', '2022-03-26 10:46:27');
 
 --
 -- Indexes for dumped tables
@@ -170,7 +170,7 @@ ALTER TABLE `supportmessage`
 -- AUTO_INCREMENT for table `symptomsreport`
 --
 ALTER TABLE `symptomsreport`
-  MODIFY `ReportID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=199;
+  MODIFY `ReportID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

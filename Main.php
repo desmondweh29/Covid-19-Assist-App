@@ -1,7 +1,7 @@
 <?php
   date_default_timezone_set("Asia/Kuala_Lumpur");
   $today = date("d");
-
+ 
   $query = "SELECT * FROM supportmessage WHERE Day = '$today'";
 
   $search_result = filterTable($query);
